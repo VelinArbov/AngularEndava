@@ -1,0 +1,9 @@
+<h2>{{cryptoId.toUpperCase()}}</h2>
+<div *ngIf="coinData">
+    <h2>{{coinData.market_data.current_price.usd  }}</h2>
+    <img [src]="coinData.image.large" alt="Coin logo">
+   
+  </div>
+  <div >
+    <button type="submit" value="Submit" routerLink="/home">Back</button>
+  </div>
